@@ -1,0 +1,40 @@
+{% extends 'AdminBundle/views/BaseAdminDashboard.html.twig' %}
+
+{% block body %}
+    <h1>Interet</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ interet.id }}</td>
+            </tr>
+            <tr>
+                <th>Heading</th>
+                <td>{{ interet.heading }}</td>
+            </tr>
+            <tr>
+                <th>Desciption</th>
+                <td>{{ interet.desciption }}</td>
+            </tr>
+            <tr>
+                <th>Createdat</th>
+                <td>{% if interet.createdAt %}{{ interet.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_interet_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('admin_interet_edit', { 'id': interet.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends 'AdminBundle/views/BaseAdminDashboard.html.twig' %}
+
+
+ {% block stylesheet %}
+
+
+
+<link rel="stylesheet" href="{{ asset('adminbundle/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="{{ asset('adminbundle/bower_components/font-awesome/css/font-awesome.min.css')}}">
+<!-- Ionicons -->
+<link rel="stylesheet" href="{{ asset('adminbundle/bower_components/Ionicons/css/ionicons.min.css')}}">
+<!-- DataTables -->
+<link rel="stylesheet" href="{{ asset('adminbundle/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
+<!-- Theme style -->
+<link rel="stylesheet" href="{{ asset('adminbundle/dist/css/AdminLTE.min.css')}}">
+<link rel="stylesheet" href="{{ asset('adminbundle/dist/css/skins/_all-skins.min.css')}}">
+<link rel="stylesheet"
+           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+
+ {% endblock %}
+
+
+{% block body %}
+
+    <h1>Interets list</h1>
+
+
+        <p data-placement="left" data-toggle="tooltip" title="Creat"><a href="{{ path('admin_interet_new') }}"
+                                                                       class="btn btn-outline-success" data-title="Edit"  ><span class="glyphicon glyphicon-plus"></span> Create a new interet</a></p>
+
+
+
+
+
+
+
+        <table id="example2" class="table table-bordered table-hover">
+            <thead>
+
+            <tr>
+                <th>Id</th>
+                <th>Heading</th>
+                <th>Desciption</th>
+                <th>Date Creation</th>
+                <th>Actions</th>
+            </tr>
+
+            </thead>
+
+            <tbody>
+            {% for interet in interets %}
+            <tr>
+                <td><a href="{{ path('admin_interet_show', { 'id': interet.id }) }}">{{ interet.id }}</a></td>
+                <td>{{ interet.heading }}</td>
+                <td>{{ interet.desciption }}</td>
+                <td>{% if interet.createdAt %}{{ interet.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+
+                <td><span data-placement="top" data-toggle="tooltip" title="Edit"><a href="{{ path('admin_interet_edit', { 'id': interet.id }) }}" class="btn btn-primary btn-xs" data-title="Edit"  >
+                            <span class="glyphicon glyphicon-pencil"></span></a></span>
+
+                <span data-placement="top" data-toggle="tooltip" title="Delete"><a href="{{ path('admin_interet_edit', { 'id': interet.id }) }}" class="btn btn-danger btn-xs" data-title="Delete"  >
+                            <span class="glyphicon glyphicon-trash"></span></a></span>
+               <span data-placement="top" data-toggle="tooltip" title="Show"><a href="{{ path('admin_interet_show', { 'id': interet.id }) }}" class="btn btn-info btn-xs" data-title="Show" >
+                       <span class="glyphicon glyphicon-zoom-in"></span></a></span></td>
+
+
+
+            </tr>
+
+            </tbody>
+            {% endfor %}
+            <tfoot>
+            <tr>
+                <th>Id</th>
+                <th>Heading</th>
+                <th>Desciption</th>
+                <th>Createdat</th>
+                <th>Actions</th>
+            </tr>
+            </tfoot>
+        </table>
+
+
+
+
+{% endblock %}
+
+
+
+
+
+{% block javascript %}
+
+<script src="{{ asset('adminbundle/bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{ asset('adminbundle/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
+
+
+<!-- page script -->
+<script>
+    $(function () {
+        $('#example1').DataTable()
+        $('#example2').DataTable({
+
+        })
+    })
+</script>
+
+{% endblock %}

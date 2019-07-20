@@ -1,0 +1,26 @@
+{% extends 'AdminBundle/views/BaseAdminDashboard.html.twig' %}
+
+{% block body %}
+    <h1>Interet creation</h1>
+
+    {{ form_start(form) }}
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1"> {{ form_label(form.heading) }}</label>
+
+        {{ form_widget(form.heading, { 'attr': {'class': 'form-control'} }) }}
+
+
+    </div>
+
+    {{ form_widget(form) }}
+        <input type="submit" value="Create" />
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_interet_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}
