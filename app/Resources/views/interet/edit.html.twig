@@ -27,25 +27,63 @@
 
 
 {% block body %}
+
+
     <h1>Interet edit</h1>
 
     {{ form_start(edit_form) }}
 
+    <div class="form-group">
+        <label>  {{ form_label(edit_form.heading) }}</label>
+
+        {{ form_widget(edit_form.heading, { 'attr': {'class': 'form-control'} }) }}
+        <small>{{ form_errors(edit_form.heading) }}</small>
+
+
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1"> {{ form_label(edit_form.desciption) }}</label>
+        {{ form_widget(edit_form.desciption, { 'attr': {'class': 'form-control'} }) }}
+        <small>{{ form_errors(edit_form.desciption) }}</small>
+    </div>
+
+
+
+
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1"> {{ form_label(edit_form.createdAt) }}</label>
+        {{ form_widget(edit_form.createdAt )}}
+        <small>{{ form_errors(edit_form.createdAt) }}</small>
+
+    </div>
+
+
         {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
+        <input type="submit" value="Edit" class="btn btn-primary" />
+    {{ form_start(delete_form) }}
+    <input type="submit"  class="btn btn-danger" value="Delete">
+    {{ form_end(delete_form) }}
+
     {{ form_end(edit_form) }}
 
     <ul>
         <li>
             <a href="{{ path('admin_interet_index') }}">Back to the list</a>
         </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
+
     </ul>
 {% endblock %}
+
+
+
+
+
+
 
 
 

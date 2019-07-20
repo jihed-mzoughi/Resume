@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* interet/edit.html.twig */
+/* :interet:edit.html.twig */
 class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d1d9bb extends \Twig\Template
 {
     private $source;
@@ -41,12 +41,12 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "interet/edit.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", ":interet:edit.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "interet/edit.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", ":interet:edit.html.twig"));
 
-        $this->parent = $this->loadTemplate("AdminBundle/views/BaseAdminDashboard.html.twig", "interet/edit.html.twig", 1);
+        $this->parent = $this->loadTemplate("AdminBundle/views/BaseAdminDashboard.html.twig", ":interet:edit.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -124,98 +124,46 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
         // line 30
         echo "
 
-    <h1>Interet edit</h1>
+    ";
+        // line 32
+        $this->env->getRuntime("Symfony\\Component\\Form\\FormRenderer")->setTheme((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 32, $this->source); })()), [0 => "bootstrap_4_layout.html.twig"], true);
+        // line 33
+        echo "    <h1>Interet edit</h1>
 
     ";
-        // line 34
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 34, $this->source); })()), 'form_start');
+        // line 35
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 35, $this->source); })()), 'form_start');
         echo "
 
-    <div class=\"form-group\">
-        <label for=\"exampleInputEmail1\">  ";
+        ";
         // line 37
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 37, $this->source); })()), "heading", [], "any", false, false, false, 37), 'label');
-        echo "</label>
-
-        ";
-        // line 39
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 39, $this->source); })()), "heading", [], "any", false, false, false, 39), 'widget', ["attr" => ["class" => "form-control"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 37, $this->source); })()), 'widget');
         echo "
-        <small>";
+        <input type=\"submit\" value=\"Edit\" />
+
+    ";
         // line 40
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 40, $this->source); })()), "heading", [], "any", false, false, false, 40), 'errors');
-        echo "</small>
-
-
-    </div>
-
-
-
-    <div class=\"form-group\">
-        <label for=\"exampleInputEmail1\"> ";
-        // line 48
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 48, $this->source); })()), "desciption", [], "any", false, false, false, 48), 'label');
-        echo "</label>
-        ";
-        // line 49
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 49, $this->source); })()), "desciption", [], "any", false, false, false, 49), 'widget', ["attr" => ["class" => "form-control"]]);
-        echo "
-        <small>";
-        // line 50
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 50, $this->source); })()), "desciption", [], "any", false, false, false, 50), 'errors');
-        echo "</small>
-    </div>
-
-
-
-
-
-
-    <div class=\"form-group\">
-        <label for=\"exampleInputEmail1\"> ";
-        // line 59
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 59, $this->source); })()), "createdAt", [], "any", false, false, false, 59), 'label');
-        echo "</label>
-        ";
-        // line 60
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 60, $this->source); })()), "createdAt", [], "any", false, false, false, 60), 'widget');
-        echo "
-        <small>";
-        // line 61
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 61, $this->source); })()), "createdAt", [], "any", false, false, false, 61), 'errors');
-        echo "</small>
-
-    </div>
-
-
-        ";
-        // line 66
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 66, $this->source); })()), 'widget');
-        echo "
-        <input type=\"submit\" value=\"Edit\" class=\"btn btn-primary\" />
-    ";
-        // line 68
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["delete_form"]) || array_key_exists("delete_form", $context) ? $context["delete_form"] : (function () { throw new RuntimeError('Variable "delete_form" does not exist.', 68, $this->source); })()), 'form_start');
-        echo "
-    <input type=\"submit\"  class=\"btn btn-danger\" value=\"Delete\">
-    ";
-        // line 70
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["delete_form"]) || array_key_exists("delete_form", $context) ? $context["delete_form"] : (function () { throw new RuntimeError('Variable "delete_form" does not exist.', 70, $this->source); })()), 'form_end');
-        echo "
-
-    ";
-        // line 72
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 72, $this->source); })()), 'form_end');
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 40, $this->source); })()), 'form_end');
         echo "
 
     <ul>
         <li>
             <a href=\"";
-        // line 76
+        // line 44
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_interet_index");
         echo "\">Back to the list</a>
         </li>
-       
+        <li>
+            ";
+        // line 47
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["delete_form"]) || array_key_exists("delete_form", $context) ? $context["delete_form"] : (function () { throw new RuntimeError('Variable "delete_form" does not exist.', 47, $this->source); })()), 'form_start');
+        echo "
+                <input type=\"submit\" value=\"Delete\">
+            ";
+        // line 49
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["delete_form"]) || array_key_exists("delete_form", $context) ? $context["delete_form"] : (function () { throw new RuntimeError('Variable "delete_form" does not exist.', 49, $this->source); })()), 'form_end');
+        echo "
+        </li>
     </ul>
 ";
         
@@ -226,7 +174,7 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
 
     }
 
-    // line 94
+    // line 66
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -236,14 +184,14 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascript"));
 
-        // line 95
+        // line 67
         echo "
 <script src=\"";
-        // line 96
+        // line 68
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/datatables.net/js/jquery.dataTables.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 97
+        // line 69
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"), "html", null, true);
         echo "\"></script>
 
@@ -269,7 +217,7 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
 
     public function getTemplateName()
     {
-        return "interet/edit.html.twig";
+        return ":interet:edit.html.twig";
     }
 
     public function isTraitable()
@@ -279,7 +227,7 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
 
     public function getDebugInfo()
     {
-        return array (  247 => 97,  243 => 96,  240 => 95,  230 => 94,  215 => 76,  208 => 72,  203 => 70,  198 => 68,  193 => 66,  185 => 61,  181 => 60,  177 => 59,  165 => 50,  161 => 49,  157 => 48,  146 => 40,  142 => 39,  137 => 37,  131 => 34,  125 => 30,  115 => 29,  99 => 16,  95 => 15,  90 => 13,  85 => 11,  80 => 9,  75 => 7,  70 => 4,  60 => 3,  37 => 1,);
+        return array (  195 => 69,  191 => 68,  188 => 67,  178 => 66,  164 => 49,  159 => 47,  153 => 44,  146 => 40,  140 => 37,  135 => 35,  131 => 33,  129 => 32,  125 => 30,  115 => 29,  99 => 16,  95 => 15,  90 => 13,  85 => 11,  80 => 9,  75 => 7,  70 => 4,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -315,45 +263,13 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
 {% block body %}
 
 
+    {% form_theme form 'bootstrap_4_layout.html.twig' %}
     <h1>Interet edit</h1>
 
     {{ form_start(edit_form) }}
 
-    <div class=\"form-group\">
-        <label for=\"exampleInputEmail1\">  {{ form_label(edit_form.heading) }}</label>
-
-        {{ form_widget(edit_form.heading, { 'attr': {'class': 'form-control'} }) }}
-        <small>{{ form_errors(edit_form.heading) }}</small>
-
-
-    </div>
-
-
-
-    <div class=\"form-group\">
-        <label for=\"exampleInputEmail1\"> {{ form_label(edit_form.desciption) }}</label>
-        {{ form_widget(edit_form.desciption, { 'attr': {'class': 'form-control'} }) }}
-        <small>{{ form_errors(edit_form.desciption) }}</small>
-    </div>
-
-
-
-
-
-
-    <div class=\"form-group\">
-        <label for=\"exampleInputEmail1\"> {{ form_label(edit_form.createdAt) }}</label>
-        {{ form_widget(edit_form.createdAt )}}
-        <small>{{ form_errors(edit_form.createdAt) }}</small>
-
-    </div>
-
-
         {{ form_widget(edit_form) }}
-        <input type=\"submit\" value=\"Edit\" class=\"btn btn-primary\" />
-    {{ form_start(delete_form) }}
-    <input type=\"submit\"  class=\"btn btn-danger\" value=\"Delete\">
-    {{ form_end(delete_form) }}
+        <input type=\"submit\" value=\"Edit\" />
 
     {{ form_end(edit_form) }}
 
@@ -361,7 +277,11 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
         <li>
             <a href=\"{{ path('admin_interet_index') }}\">Back to the list</a>
         </li>
-       
+        <li>
+            {{ form_start(delete_form) }}
+                <input type=\"submit\" value=\"Delete\">
+            {{ form_end(delete_form) }}
+        </li>
     </ul>
 {% endblock %}
 
@@ -394,6 +314,6 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
 </script>
 
 {% endblock %}
-", "interet/edit.html.twig", "/Users/jihed/Sites/Lebenslauf/app/Resources/views/interet/edit.html.twig");
+", ":interet:edit.html.twig", "/Users/jihed/Sites/Lebenslauf/app/Resources/views/interet/edit.html.twig");
     }
 }

@@ -51,7 +51,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 <head>
     <meta charset=\"utf-8\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-    <title>AdminLTE 2 | Dashboard</title>
+    <title>Resume</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\" name=\"viewport\">
     <!-- Bootstrap 3.3.7 -->
@@ -68,10 +68,8 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
 
 
-    <script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>
-    <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>
-    <![endif]-->
-    <!-- Google Font -->
+
+
     <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic\">
 </head>
 
@@ -100,7 +98,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
                     <li class=\"dropdown user user-menu\">
                         <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">
                             <img src=\"";
-        // line 74
+        // line 72
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/dist/img/user2-160x160.jpg"), "html", null, true);
         echo "\" class=\"user-image\" alt=\"User Image\">
                             <span class=\"hidden-xs\">Alexander Pierce</span>
@@ -123,7 +121,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
             <div class=\"user-panel\">
                 <div class=\"pull-left image\">
                     <img src=\"";
-        // line 94
+        // line 92
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/dist/img/user2-160x160.jpg"), "html", null, true);
         echo "\" class=\"img-circle\" alt=\"User Image\">
                 </div>
@@ -153,8 +151,8 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
                </li>
                 <li>
                     <a href=\"";
-        // line 121
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("aboutback");
+        // line 119
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_interet_index");
         echo "\">About</a>
                 </li>
                 <li>
@@ -179,11 +177,8 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
     </aside>
 
 
-    ";
-        // line 145
-        $this->displayBlock('body', $context, $blocks);
-        // line 151
-        echo "
+
+
 
 
     <!-- Content Wrapper. Contains page content -->
@@ -192,7 +187,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
         <section class=\"content-header\">
             <h1>
                 Dashboard
-                <small>Control panel</small>
+                <small></small>
             </h1>
             <ol class=\"breadcrumb\">
                 <li><a href=\"#\"><i class=\"fa fa-dashboard\"></i> Home</a></li>
@@ -202,14 +197,41 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
         <!-- Main content -->
 
+        <section class=\"content\">
+
+            <!-- Default box -->
+            <div class=\"box\">
+                <div class=\"box-header with-border\">
+                    <h3 class=\"box-title\">About me </h3>
+
+                    <div class=\"box-tools pull-right\">
+                        <button type=\"button\" class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\"
+                                title=\"Collapse\">
+                            <i class=\"fa fa-minus\"></i></button>
+                        <button type=\"button\" class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\" title=\"Remove\">
+                            <i class=\"fa fa-times\"></i></button>
+                    </div>
+                </div>
+                <div class=\"box-body\">
+                    ";
+        // line 179
+        $this->displayBlock('body', $context, $blocks);
+        // line 184
+        echo "                </div>
+
+            </div>
+            <!-- /.box -->
+
+        </section>
+
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
 
     ";
-        // line 174
+        // line 195
         $this->displayBlock('footer', $context, $blocks);
-        // line 185
+        // line 206
         echo "
 
 
@@ -220,14 +242,14 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
 
 ";
-        // line 194
+        // line 215
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 234
+        // line 255
         echo "
 ";
-        // line 235
+        // line 256
         $this->displayBlock('javascript', $context, $blocks);
-        // line 238
+        // line 259
         echo "
 </body>
 </html>
@@ -252,7 +274,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
         // line 11
         echo "
-    <link rel=\"stylesheet\" href=\"";
+                <link rel=\"stylesheet\" href=\"";
         // line 12
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/bootstrap/dist/css/bootstrap.min.css"), "html", null, true);
         echo "\">
@@ -334,7 +356,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
     }
 
-    // line 145
+    // line 179
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -344,12 +366,11 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 146
+        // line 180
         echo "
 
 
-
-    ";
+                    ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -358,7 +379,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
     }
 
-    // line 174
+    // line 195
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -368,13 +389,13 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 175
+        // line 196
         echo "
         <footer class=\"main-footer\">
             <div class=\"pull-right hidden-xs\">
                 <b>Version</b> 2.4.0
             </div>
-            <strong>Copyright &copy; 2014-2016 <a href=\"https://adminlte.io\">Almsaeed  Studio</a>.</strong> All rights
+            <strong>Copyright &copy; 2019 <a href=\"https://adminlte.io\">My Resume</a>.</strong> All rights
             reserved.
         </footer>
 
@@ -387,7 +408,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
     }
 
-    // line 194
+    // line 215
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -397,15 +418,15 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 195
+        // line 216
         echo "    <!-- jQuery 3 -->
     <script src=\"";
-        // line 196
+        // line 217
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/jquery/dist/jquery.min.js"), "html", null, true);
         echo "\"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src=\"";
-        // line 198
+        // line 219
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/jquery-ui/jquery-ui.min.js"), "html", null, true);
         echo "\"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -414,79 +435,79 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
     </script>
     <!-- Bootstrap 3.3.7 -->
     <script src=\"";
-        // line 204
+        // line 225
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/bootstrap/dist/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
     <!-- Morris.js charts -->
     <script src=\"";
-        // line 206
+        // line 227
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/raphael/raphael.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 207
+        // line 228
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/morris.js/morris.min.js"), "html", null, true);
         echo "\"></script>
     <!-- Sparkline -->
     <script src=\"";
-        // line 209
+        // line 230
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"), "html", null, true);
         echo "\"></script>
     <!-- jvectormap -->
     <script src=\"";
-        // line 211
+        // line 232
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 212
+        // line 233
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"), "html", null, true);
         echo "\"></script>
     <!-- jQuery Knob Chart -->
     <script src=\"";
-        // line 214
+        // line 235
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/jquery-knob/dist/jquery.knob.min.js"), "html", null, true);
         echo "\"></script>
     <!-- daterangepicker -->
     <script src=\"";
-        // line 216
+        // line 237
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/moment/min/moment.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 217
+        // line 238
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/bootstrap-daterangepicker/daterangepicker.js"), "html", null, true);
         echo "\"></script>
     <!-- datepicker -->
     <script src=\"";
-        // line 219
+        // line 240
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"), "html", null, true);
         echo "\"></script>
     <!-- Bootstrap WYSIHTML5 -->
     <script ssrc=\"";
-        // line 221
+        // line 242
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"), "html", null, true);
         echo "\"></script>
     <!-- Slimscroll -->
     <script src=\"";
-        // line 223
+        // line 244
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"), "html", null, true);
         echo "\"></script>
     <!-- FastClick -->
     <script src=\"";
-        // line 225
+        // line 246
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/bower_components/fastclick/lib/fastclick.js"), "html", null, true);
         echo "\"></script>
     <!-- AdminLTE App -->
     <script src=\"";
-        // line 227
+        // line 248
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/dist/js/adminlte.min.js"), "html", null, true);
         echo "\"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src=\"";
-        // line 229
+        // line 250
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/dist/js/pages/dashboard.js"), "html", null, true);
         echo "\"></script>
     <!-- AdminLTE for demo purposes -->
     <script src=\"";
-        // line 231
+        // line 252
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("adminbundle/dist/js/demo.js"), "html", null, true);
         echo "\"></script>
 
@@ -499,7 +520,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
     }
 
-    // line 235
+    // line 256
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -509,7 +530,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascript"));
 
-        // line 236
+        // line 257
         echo "
 ";
         
@@ -532,7 +553,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
     public function getDebugInfo()
     {
-        return array (  513 => 236,  503 => 235,  490 => 231,  485 => 229,  480 => 227,  475 => 225,  470 => 223,  465 => 221,  460 => 219,  455 => 217,  451 => 216,  446 => 214,  441 => 212,  437 => 211,  432 => 209,  427 => 207,  423 => 206,  418 => 204,  409 => 198,  404 => 196,  401 => 195,  391 => 194,  372 => 175,  362 => 174,  348 => 146,  338 => 145,  327 => 37,  317 => 36,  303 => 31,  298 => 29,  293 => 27,  288 => 25,  283 => 23,  278 => 21,  272 => 18,  267 => 16,  262 => 14,  257 => 12,  254 => 11,  244 => 10,  231 => 238,  229 => 235,  226 => 234,  224 => 194,  213 => 185,  211 => 174,  186 => 151,  184 => 145,  157 => 121,  127 => 94,  104 => 74,  67 => 39,  65 => 36,  62 => 35,  60 => 10,  49 => 1,);
+        return array (  534 => 257,  524 => 256,  511 => 252,  506 => 250,  501 => 248,  496 => 246,  491 => 244,  486 => 242,  481 => 240,  476 => 238,  472 => 237,  467 => 235,  462 => 233,  458 => 232,  453 => 230,  448 => 228,  444 => 227,  439 => 225,  430 => 219,  425 => 217,  422 => 216,  412 => 215,  393 => 196,  383 => 195,  370 => 180,  360 => 179,  349 => 37,  339 => 36,  325 => 31,  320 => 29,  315 => 27,  310 => 25,  305 => 23,  300 => 21,  294 => 18,  289 => 16,  284 => 14,  279 => 12,  276 => 11,  266 => 10,  253 => 259,  251 => 256,  248 => 255,  246 => 215,  235 => 206,  233 => 195,  220 => 184,  218 => 179,  155 => 119,  125 => 92,  102 => 72,  67 => 39,  65 => 36,  62 => 35,  60 => 10,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -542,13 +563,13 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 <head>
     <meta charset=\"utf-8\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-    <title>AdminLTE 2 | Dashboard</title>
+    <title>Resume</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\" name=\"viewport\">
     <!-- Bootstrap 3.3.7 -->
     {% block stylesheets %}
 
-    <link rel=\"stylesheet\" href=\"{{ asset('adminbundle/bower_components/bootstrap/dist/css/bootstrap.min.css')}}\">
+                <link rel=\"stylesheet\" href=\"{{ asset('adminbundle/bower_components/bootstrap/dist/css/bootstrap.min.css')}}\">
     <!-- Font Awesome -->
     <link rel=\"stylesheet\" href=\"{{ asset('adminbundle/bower_components/font-awesome/css/font-awesome.min.css')}}\">
     <!-- Ionicons -->
@@ -579,10 +600,8 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
 
 
-    <script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>
-    <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>
-    <![endif]-->
-    <!-- Google Font -->
+
+
     <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic\">
 </head>
 
@@ -657,7 +676,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
                </li>
                 <li>
-                    <a href=\"{{ path('aboutback') }}\">About</a>
+                    <a href=\"{{ path('admin_interet_index') }}\">About</a>
                 </li>
                 <li>
                     <a href=\"#\">Skills</a>
@@ -681,12 +700,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
     </aside>
 
 
-    {% block body%}
 
-
-
-
-    {% endblock %}
 
 
 
@@ -696,7 +710,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
         <section class=\"content-header\">
             <h1>
                 Dashboard
-                <small>Control panel</small>
+                <small></small>
             </h1>
             <ol class=\"breadcrumb\">
                 <li><a href=\"#\"><i class=\"fa fa-dashboard\"></i> Home</a></li>
@@ -705,6 +719,34 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
         </section>
 
         <!-- Main content -->
+
+        <section class=\"content\">
+
+            <!-- Default box -->
+            <div class=\"box\">
+                <div class=\"box-header with-border\">
+                    <h3 class=\"box-title\">About me </h3>
+
+                    <div class=\"box-tools pull-right\">
+                        <button type=\"button\" class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\"
+                                title=\"Collapse\">
+                            <i class=\"fa fa-minus\"></i></button>
+                        <button type=\"button\" class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\" title=\"Remove\">
+                            <i class=\"fa fa-times\"></i></button>
+                    </div>
+                </div>
+                <div class=\"box-body\">
+                    {% block body%}
+
+
+
+                    {% endblock %}
+                </div>
+
+            </div>
+            <!-- /.box -->
+
+        </section>
 
         <!-- /.content -->
     </div>
@@ -716,7 +758,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
             <div class=\"pull-right hidden-xs\">
                 <b>Version</b> 2.4.0
             </div>
-            <strong>Copyright &copy; 2014-2016 <a href=\"https://adminlte.io\">Almsaeed  Studio</a>.</strong> All rights
+            <strong>Copyright &copy; 2019 <a href=\"https://adminlte.io\">My Resume</a>.</strong> All rights
             reserved.
         </footer>
 

@@ -147,7 +147,7 @@ class __TwigTemplate_b31ef02e510f8e643636cccc0c8d1e927c3f8d0cb800453d830bf8a438c
             <div class=\"main_content\">
                 <div class=\"main_title_container d-flex flex-column align-items-start justify-content-end\">
                     <div class=\"main_subtitle\">HTML5 & CSS Developer</div>
-                    <div class=\"main_title\">Jeremy Smith</div>
+                    <div class=\"main_title\">Jihed emzoughi</div>
                 </div>
                 <div class=\"main_content_scroll mCustomScrollbar\" data-mcs-theme=\"minimal-dark\">
                     <div class=\"about_content\">
@@ -299,7 +299,7 @@ class __TwigTemplate_b31ef02e510f8e643636cccc0c8d1e927c3f8d0cb800453d830bf8a438c
             <div class=\"main_content\">
                 <div class=\"main_title_container d-flex flex-column align-items-start justify-content-end\">
                     <div class=\"main_subtitle\">HTML5 & CSS Developer</div>
-                    <div class=\"main_title\">Jeremy Smith</div>
+                    <div class=\"main_title\">Jihed emzoughi</div>
                 </div>
                 <div class=\"main_content_scroll mCustomScrollbar\" data-mcs-theme=\"minimal-dark\">
                     <div class=\"about_content\">
