@@ -69,8 +69,8 @@ class interetController extends Controller
      */
     public function showAction(interet $interet)
     {
-        $deleteForm = $this->createDeleteForm($interet);
 
+        $deleteForm = $this->createDeleteForm($interet);
         return $this->render('interet/show.html.twig', array(
             'interet' => $interet,
             'delete_form' => $deleteForm->createView(),
@@ -105,15 +105,17 @@ class interetController extends Controller
     /**
      * Deletes a interet entity.
      *
-     * @Route("/{id}", name="admin_interet_delete")
+     * @Route("/delete/{id}", name="admin_interet_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, interet $interet)
     {
         $form = $this->createDeleteForm($interet);
+
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
             $em = $this->getDoctrine()->getManager();
             $em->remove($interet);
             $em->flush();

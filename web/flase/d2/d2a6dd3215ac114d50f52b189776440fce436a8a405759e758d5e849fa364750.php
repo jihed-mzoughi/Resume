@@ -67,7 +67,7 @@ class __TwigTemplate_29b48937f21ebd85e50c1bcaf87f71bcb95ea31bdc30bf3a177dad9fd94
         // line 4
         echo "    <h1>Interet</h1>
 
-    <table>
+    <table class=\"table\">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -102,31 +102,33 @@ class __TwigTemplate_29b48937f21ebd85e50c1bcaf87f71bcb95ea31bdc30bf3a177dad9fd94
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href=\"";
-        // line 29
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_interet_index");
-        echo "\">Back to the list</a>
-        </li>
-        <li>
-            <a href=\"";
-        // line 32
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_interet_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["interet"]) || array_key_exists("interet", $context) ? $context["interet"] : (function () { throw new RuntimeError('Variable "interet" does not exist.', 32, $this->source); })()), "id", [], "any", false, false, false, 32)]), "html", null, true);
+
+
+
+            ";
+        // line 30
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["delete_form"]) || array_key_exists("delete_form", $context) ? $context["delete_form"] : (function () { throw new RuntimeError('Variable "delete_form" does not exist.', 30, $this->source); })()), 'form_start');
+        echo "
+
+
+
+
+    <div class=\"w3-show-inline-block\">
+        <div class=\"w3-bar\">
+
+            <a type=\"submit\"  class=\"btn btn-primary\" href=\"";
+        // line 38
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_interet_edit", ["id" => twig_get_attribute($this->env, $this->source,         // line 39
+(isset($context["interet"]) || array_key_exists("interet", $context) ? $context["interet"] : (function () { throw new RuntimeError('Variable "interet" does not exist.', 39, $this->source); })()), "id", [], "any", false, false, false, 39)]), "html", null, true);
         echo "\">Edit</a>
-        </li>
-        <li>
-            ";
-        // line 35
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["delete_form"]) || array_key_exists("delete_form", $context) ? $context["delete_form"] : (function () { throw new RuntimeError('Variable "delete_form" does not exist.', 35, $this->source); })()), 'form_start');
+            <input type=\"submit\"  class=\"btn btn-danger\" value=\"Delete \">
+        </div>
+    </div>
+    ";
+        // line 43
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["delete_form"]) || array_key_exists("delete_form", $context) ? $context["delete_form"] : (function () { throw new RuntimeError('Variable "delete_form" does not exist.', 43, $this->source); })()), 'form_end');
         echo "
-                <input type=\"submit\" value=\"Delete\">
-            ";
-        // line 37
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["delete_form"]) || array_key_exists("delete_form", $context) ? $context["delete_form"] : (function () { throw new RuntimeError('Variable "delete_form" does not exist.', 37, $this->source); })()), 'form_end');
-        echo "
-        </li>
-    </ul>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -148,7 +150,7 @@ class __TwigTemplate_29b48937f21ebd85e50c1bcaf87f71bcb95ea31bdc30bf3a177dad9fd94
 
     public function getDebugInfo()
     {
-        return array (  126 => 37,  121 => 35,  115 => 32,  109 => 29,  97 => 22,  90 => 18,  83 => 14,  76 => 10,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  129 => 43,  122 => 39,  121 => 38,  110 => 30,  97 => 22,  90 => 18,  83 => 14,  76 => 10,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -158,7 +160,7 @@ class __TwigTemplate_29b48937f21ebd85e50c1bcaf87f71bcb95ea31bdc30bf3a177dad9fd94
 {% block body %}
     <h1>Interet</h1>
 
-    <table>
+    <table class=\"table\">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -179,19 +181,24 @@ class __TwigTemplate_29b48937f21ebd85e50c1bcaf87f71bcb95ea31bdc30bf3a177dad9fd94
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href=\"{{ path('admin_interet_index') }}\">Back to the list</a>
-        </li>
-        <li>
-            <a href=\"{{ path('admin_interet_edit', { 'id': interet.id }) }}\">Edit</a>
-        </li>
-        <li>
+
+
+
             {{ form_start(delete_form) }}
-                <input type=\"submit\" value=\"Delete\">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+
+
+
+
+    <div class=\"w3-show-inline-block\">
+        <div class=\"w3-bar\">
+
+            <a type=\"submit\"  class=\"btn btn-primary\" href=\"{{ path('admin_interet_edit',
+                { 'id': interet.id }) }}\">Edit</a>
+            <input type=\"submit\"  class=\"btn btn-danger\" value=\"Delete \">
+        </div>
+    </div>
+    {{ form_end(delete_form) }}
+
 {% endblock %}
 ", "interet/show.html.twig", "/Users/jihed/Sites/Lebenslauf/app/Resources/views/interet/show.html.twig");
     }

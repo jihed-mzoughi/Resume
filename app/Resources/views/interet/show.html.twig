@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Interet</h1>
 
-    <table>
+    <table class="table">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -24,17 +24,22 @@
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('admin_interet_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('admin_interet_edit', { 'id': interet.id }) }}">Edit</a>
-        </li>
-        <li>
+
+
+
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+
+
+
+
+    <div class="w3-show-inline-block">
+        <div class="w3-bar">
+
+            <a type="submit"  class="btn btn-primary" href="{{ path('admin_interet_edit',
+                { 'id': interet.id }) }}">Edit</a>
+            <input type="submit"  class="btn btn-danger" value="Delete ">
+        </div>
+    </div>
+    {{ form_end(delete_form) }}
+
 {% endblock %}

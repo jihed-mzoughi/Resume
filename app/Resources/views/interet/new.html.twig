@@ -1,26 +1,113 @@
+
+
 {% extends 'AdminBundle/views/BaseAdminDashboard.html.twig' %}
 
+{% block stylesheet %}
+
+
+
+    <link rel="stylesheet" href="{{ asset('adminbundle/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ asset('adminbundle/bower_components/font-awesome/css/font-awesome.min.css')}}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="{{ asset('adminbundle/bower_components/Ionicons/css/ionicons.min.css')}}">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('adminbundle/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ asset('adminbundle/dist/css/AdminLTE.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('adminbundle/dist/css/skins/_all-skins.min.css')}}">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+
+    <style>
+        .error {
+            color: red;
+        }
+
+    </style>
+
+
+{% endblock %}
+
+
+
+
+
+
+
 {% block body %}
-    <h1>Interet creation</h1>
+
+
+    <h1>Interet edit</h1>
 
     {{ form_start(form) }}
 
-
     <div class="form-group">
-        <label for="exampleInputEmail1"> {{ form_label(form.heading) }}</label>
+        <label>  {{ form_label(form.heading) }}</label>
 
         {{ form_widget(form.heading, { 'attr': {'class': 'form-control'} }) }}
+        <small>{{ form_errors(form.heading) }}</small>
 
 
     </div>
 
-    {{ form_widget(form) }}
-        <input type="submit" value="Create" />
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1"> {{ form_label(form.desciption) }}</label>
+        {{ form_widget(form.desciption, { 'attr': {'class': 'form-control'} }) }}
+        <small class="error">{{ form_errors(form.desciption) }}</small>
+    </div>
+
+
+
+
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1"> {{ form_label(form.createdAt) }}</label>
+        {{ form_widget(form.createdAt )}}
+        <small>{{ form_errors(form.createdAt) }}</small>
+
+    </div>
+
+
+    <input type="submit"  class="btn btn-primary" value="Ajout">
+
     {{ form_end(form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('admin_interet_index') }}">Back to the list</a>
-        </li>
-    </ul>
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block javascript %}
+
+<script src="{{ asset('adminbundle/bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{ asset('adminbundle/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
+
+
+<!-- page script -->
+<script>
+    $(function () {
+        $('#example1').DataTable()
+        $('#example2').DataTable({
+
+        })
+    })
+</script>
+
 {% endblock %}

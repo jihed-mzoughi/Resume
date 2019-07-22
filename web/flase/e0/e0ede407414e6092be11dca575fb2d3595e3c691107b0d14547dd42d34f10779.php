@@ -132,7 +132,7 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
         echo "
 
     <div class=\"form-group\">
-        <label for=\"exampleInputEmail1\">  ";
+        <label>  ";
         // line 37
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 37, $this->source); })()), "heading", [], "any", false, false, false, 37), 'label');
         echo "</label>
@@ -192,7 +192,7 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
         // line 66
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 66, $this->source); })()), 'widget');
         echo "
-        <input type=\"submit\" value=\"Edit\" class=\"btn btn-primary\" />
+        <input type=\"submit\" value=\"Edit\" class=\"btn btn-primary\">
     ";
         // line 68
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["delete_form"]) || array_key_exists("delete_form", $context) ? $context["delete_form"] : (function () { throw new RuntimeError('Variable "delete_form" does not exist.', 68, $this->source); })()), 'form_start');
@@ -215,7 +215,7 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_interet_index");
         echo "\">Back to the list</a>
         </li>
-       
+
     </ul>
 ";
         
@@ -320,7 +320,7 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
     {{ form_start(edit_form) }}
 
     <div class=\"form-group\">
-        <label for=\"exampleInputEmail1\">  {{ form_label(edit_form.heading) }}</label>
+        <label>  {{ form_label(edit_form.heading) }}</label>
 
         {{ form_widget(edit_form.heading, { 'attr': {'class': 'form-control'} }) }}
         <small>{{ form_errors(edit_form.heading) }}</small>
@@ -350,7 +350,7 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
 
 
         {{ form_widget(edit_form) }}
-        <input type=\"submit\" value=\"Edit\" class=\"btn btn-primary\" />
+        <input type=\"submit\" value=\"Edit\" class=\"btn btn-primary\">
     {{ form_start(delete_form) }}
     <input type=\"submit\"  class=\"btn btn-danger\" value=\"Delete\">
     {{ form_end(delete_form) }}
@@ -361,7 +361,7 @@ class __TwigTemplate_c92d52489a4b3070503ad0df4e13d84b56e1524627e0de28d979f1ba84d
         <li>
             <a href=\"{{ path('admin_interet_index') }}\">Back to the list</a>
         </li>
-       
+
     </ul>
 {% endblock %}
 

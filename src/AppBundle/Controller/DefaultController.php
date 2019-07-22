@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
-class   DefaultController extends Controller
+class   DefaultController  extends Controller
 {
     /**
      * @Route("/", name="homepage")
@@ -14,7 +14,7 @@ class   DefaultController extends Controller
     public function indexAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig');
+        return $this->render('front-end/index.html.twig');
     }
 
 
@@ -26,7 +26,7 @@ class   DefaultController extends Controller
     public function about (Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/about.html.twig');
+        return $this->render('front-end/about.html.twig');
     }
 
     /**
@@ -35,7 +35,7 @@ class   DefaultController extends Controller
     public function skills (Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/skills.html.twig');
+        return $this->render('front-end/skills.html.twig');
     }
 
     /**
@@ -44,7 +44,7 @@ class   DefaultController extends Controller
     public function service (Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/service.html.twig');
+        return $this->render('front-end/service.html.twig');
     }
 
     /**
@@ -53,7 +53,7 @@ class   DefaultController extends Controller
     public function experience (Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/experience.html.twig');
+        return $this->render('front-end/experience.html.twig');
     }
 
     /**
@@ -62,7 +62,7 @@ class   DefaultController extends Controller
     public function education (Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/education.html.twig');
+        return $this->render('front-end/education.html.twig');
     }
 
 
@@ -71,9 +71,15 @@ class   DefaultController extends Controller
      * @Route("/interet", name="interet")
      */
     public function interet (Request $request)
+
     {
+        //recuperation form interet de backend : connecte 3ala base , findall, nab3et objet lil page interet.html.twig
+        $em = $this->getDoctrine()->getManager();
+
+        $interets = $em->getRepository('AppBundle:interet')->findAll();
         // replace this example code with whatever you need
-        return $this->render('default/interet.html.twig');
+        return $this->render('front-end/interet.html.twig', array(
+            'interets'=>$interets));
     }
     /**
      * @Route("/contact", name="contact")
@@ -81,7 +87,7 @@ class   DefaultController extends Controller
     public function contact (Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/contact.html.twig');
+        return $this->render('front-end/contact.html.twig');
     }
 
 

@@ -153,7 +153,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
                     <a href=\"";
         // line 119
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_interet_index");
-        echo "\">About</a>
+        echo "\">Interet</a>
                 </li>
                 <li>
                     <a href=\"#\">Skills</a>
@@ -162,7 +162,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
                     <a href=\"#\">Experience</a>
                 </li>
                 <li>
-                    <a href=\"#\">Interet</a>
+                    <a href=\"#\">About</a>
                 </li>
 
                 <li>
@@ -676,7 +676,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
 
                </li>
                 <li>
-                    <a href=\"{{ path('admin_interet_index') }}\">About</a>
+                    <a href=\"{{ path('admin_interet_index') }}\">Interet</a>
                 </li>
                 <li>
                     <a href=\"#\">Skills</a>
@@ -685,7 +685,7 @@ class __TwigTemplate_e05117dd440c006354da79a9dab9fbfb21ff1fdcfc021703b37e762fd2d
                     <a href=\"#\">Experience</a>
                 </li>
                 <li>
-                    <a href=\"#\">Interet</a>
+                    <a href=\"#\">About</a>
                 </li>
 
                 <li>

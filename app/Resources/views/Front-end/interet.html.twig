@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+
+
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('lebenslauf/styles/testimonials.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('lebenslauf/styles/testimonials_responsive.css')}}">
+
+
+
+{% endblock %}
+
+{% block body %}
+    <!-- Header -->
+
+
+
+    <div class="content_container">
+        <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
+
+            <!-- General Information -->
+            {% include "front-end/information-generale.html.twig"  %}
+
+            <!-- Main Content -->
+
+
+            <div class="main_content">
+                <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
+                    <div class="main_subtitle">What I make </div>
+                    <div class="main_title"> in free time</div>
+                </div>
+                <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
+                    <!-- Testimonials -->
+
+                    <div class="testimonials">
+
+                        <!-- Testimonials Slider -->
+                        <div class="test_slider_container">
+                            <div class="owl-carousel owl-theme test_slider">
+
+
+                                {% for interet in interets  %}
+
+
+
+                                <!-- Slide -->
+                                <div class="owl-item test_item">
+                                    <div class="test_title">{{ interet.heading }}</div>
+                                    <div class="test_text">
+                                        <p>{{ interet.desciption }}</p>
+                                    </div>
+                                    <div>{{ interet.createdAt |date('d: m :y') }}</div>
+                                </div>
+
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}
+
